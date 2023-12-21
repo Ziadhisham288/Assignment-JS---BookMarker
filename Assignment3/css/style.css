@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#homePage {
+    background-color: #F7ECDE;
+    min-height: 100vh;
+    position: relative;
+}
+
+label {
+    font-family: 'Righteous', sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+}
+
+h2 {
+    position: relative;
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.8rem;
+    background: linear-gradient(109.6deg, rgb(82, 197, 10) 11.2%, rgb(170, 170, 7) 100.2%);
+    background-clip: text;
+    color: transparent;
+}
+
+h2 i {
+    margin: 0 5px;
+}
+
+h2::after {
+    content: "";
+    width: 100%;
+    border-bottom: dotted black 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80;
+    z-index: 99;
+    position: absolute;
+}
+
+
+button {
+    transition: all 0.2s;
+}
+
+button:hover {
+    filter: brightness(80%);
+}
+
+#errorBox {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+}
+
+#errorBoxContent {
+    background-color: white;
+    width: 500px;
+    z-index: 100;
+}
+
+#errorBoxContent h3 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+#errorBoxContent li {
+    font-size: 1.1rem;
+    font-weight: 600;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#errorBoxContent ul {
+    padding-left: 10px;
+
+}

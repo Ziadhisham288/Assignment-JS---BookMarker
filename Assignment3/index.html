@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Bookmarker</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section id="homePage">
+        <div class="container mx-auto">
+            <div class="header text-center py-5">
+                <h1 class="mb-2">Bookmarker</h1>
+            </div>
+
+            <div class="websiteForm mx-auto">
+                <h2 class="mb-1 text-center py-3">
+                    <i class="fa-solid fa-bookmark fa-sm"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark fa-sm"></i>
+                </h2>
+                <label for="siteName" class="mb-2"><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+                <input class="form-control mb-3 px-3" type="text" id="siteName" placeholder="Website Name">
+
+                <label for="siteURL" class="mb-2"><i class="fa-solid fa-link me-2"></i>Site URL</label>
+                <input class="form-control mb-4 px-3" type="text" id="siteURL" placeholder="Website URL">
+
+                <button id="submitBtn"
+                    class="btn btn-danger px-5 py-1 mx-auto d-block mb-4 position-relative">Submit</button>
+            </div>
+
+            <table class="table text-center position-relative mt-3">
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="websiteTable">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="errorBox"
+            class="justify-content-center align-items-center position-absolute start-0 top-0 w-100 h-100 d-none">
+            <div id="errorBoxContent" class="p-4 rounded-2 ">
+                <div class="header d-flex justify-content-between align-items-center mb-3">
+                    <div class="circles">
+                        <i class="fa-solid fa-circle fa-lg" style="color: #d41111;"></i>
+                        <i class="fa-solid fa-circle fa-lg" style="color: #eaed07;"></i>
+                        <i class="fa-solid fa-circle fa-lg" style="color: #16ca34;"></i>
+                    </div>
+                    <button id="closeBtn" class="border-0 bg-white">
+                        <i class="fa-solid fa-xmark" style="color: #050505;"></i>
+                    </button>
+                </div>
+                <h3 class="mb-4">Site Name or Url is not valid, Please follow the rules below :</h3>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-circle-arrow-right" style="color: #ea1010;"></i>
+                        Site name must contain at least 3 characters
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-arrow-right" style="color: #ea1010;"></i>
+                        Site URL must be a valid one
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
